@@ -9,7 +9,7 @@ const openhandle = new OpenHandle({ apiKey: process.env.OPENHANDLE_TEST_KEY! });
 let page = await openhandle.tiktok.search.posts.list({ q: 'synthetic' });
 
 while (true) {
-    for (const video of page.data) console.log(video.author?.handle, video.metrics.views, video.caption);
+    for (const video of page.data) console.log(video.author?.handle, video.metrics.views, video.text);
     const next = await page.next();
     if (!next) break;
     page = next;
