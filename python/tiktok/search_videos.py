@@ -9,4 +9,4 @@ from openhandle import OpenHandle
 openhandle = OpenHandle(api_key=os.environ["OPENHANDLE_TEST_KEY"])
 
 for video in openhandle.tiktok.search.posts.items(q="synthetic"):
-    print(video["author"]["handle"], video["metrics"]["views"], video["caption"])
+    print(video["author"]["handle"], video["metrics"]["views"], video["text"])
