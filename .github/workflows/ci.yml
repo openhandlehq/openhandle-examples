@@ -37,6 +37,22 @@ jobs:
             - run: pip install -r requirements.txt
             - run: python -m compileall -q .
 
+    php:
+        runs-on: ubuntu-latest
+        timeout-minutes: 10
+        defaults:
+            run:
+                working-directory: php
+        steps:
+            - uses: actions/checkout@v7
+            - uses: shivammathur/setup-php@v2
+              with:
+                  php-version: '8.2'
+                  tools: composer:v2
+                  coverage: none
+            - run: composer install --no-interaction --no-progress
+            - run: composer check
+
     go:
         runs-on: ubuntu-latest
         timeout-minutes: 10

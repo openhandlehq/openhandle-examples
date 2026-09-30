@@ -1,0 +1,19 @@
+{
+    "name": "openhandle/examples-php",
+    "description": "Runnable Openhandle PHP examples",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "openhandle/sdk": "^1.2"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^2.0"
+    },
+    "scripts": {
+        "check": "phpstan analyse --level=max --no-progress --memory-limit=1G instagram reddit tiktok twitter"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
