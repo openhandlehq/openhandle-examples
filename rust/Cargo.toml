@@ -1,0 +1,61 @@
+[package]
+name = "openhandle-examples"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "Runnable Openhandle Rust examples"
+license = "MIT"
+publish = false
+
+[dependencies]
+chrono = { version = "0.4", default-features = false, features = ["std"] }
+openhandle = "1.2.6"
+tokio = { version = "1.48", features = ["macros", "rt-multi-thread"] }
+
+[[bin]]
+name = "instagram-engagement-rate"
+path = "instagram/engagement-rate.rs"
+
+[[bin]]
+name = "instagram-follower-count"
+path = "instagram/follower-count.rs"
+
+[[bin]]
+name = "instagram-hashtag-posts"
+path = "instagram/hashtag-posts.rs"
+
+[[bin]]
+name = "instagram-post-comments"
+path = "instagram/post-comments.rs"
+
+[[bin]]
+name = "reddit-brand-mentions"
+path = "reddit/brand-mentions.rs"
+
+[[bin]]
+name = "reddit-user-post-history"
+path = "reddit/user-post-history.rs"
+
+[[bin]]
+name = "tiktok-follower-count"
+path = "tiktok/follower-count.rs"
+
+[[bin]]
+name = "tiktok-search-videos"
+path = "tiktok/search-videos.rs"
+
+[[bin]]
+name = "tiktok-video-views"
+path = "tiktok/video-views.rs"
+
+[[bin]]
+name = "twitter-posts-since"
+path = "twitter/posts-since.rs"
+
+[[bin]]
+name = "twitter-search-posts"
+path = "twitter/search-posts.rs"
+
+[[bin]]
+name = "twitter-thread-replies"
+path = "twitter/thread-replies.rs"

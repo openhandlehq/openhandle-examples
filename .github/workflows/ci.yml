@@ -53,6 +53,20 @@ jobs:
             - run: composer install --no-interaction --no-progress
             - run: composer check
 
+    rust:
+        runs-on: ubuntu-latest
+        timeout-minutes: 10
+        defaults:
+            run:
+                working-directory: rust
+        steps:
+            - uses: actions/checkout@v7
+            - uses: dtolnay/rust-toolchain@stable
+              with:
+                  components: clippy
+            - run: cargo build --all-targets
+            - run: cargo clippy --all-targets -- -D warnings
+
     go:
         runs-on: ubuntu-latest
         timeout-minutes: 10
