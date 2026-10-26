@@ -1,6 +1,6 @@
 # Openhandle examples
 
-These examples show how to get public Instagram, TikTok, X, and Reddit data. Each example answers a question with one API request. You can run them in TypeScript, Python, Go, PHP, Rust, or cURL. Read the explanations at [openhandle.dev/questions](https://openhandle.dev/questions).
+These examples show how to get public Instagram, TikTok, X, Reddit, and YouTube data. Each example answers a question with one API request. You can run them in TypeScript, Python, Go, PHP, Rust, or cURL. Read the explanations at [openhandle.dev/questions](https://openhandle.dev/questions).
 
 Every example uses a Test account, so it runs on a free Test key and is never charged. Create a key at [app.openhandle.dev](https://app.openhandle.dev) and export it:
 
